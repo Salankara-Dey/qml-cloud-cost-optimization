@@ -24,7 +24,10 @@ if uploaded_file:
 
 
     X = df[["cpu_hrs", "memory_gb", "storage_gb", "network_gb"]]
-print(df.columns)
+if uploaded_file:
+    df = pd.read_csv(uploaded_file)
+    st.write("Columns in uploaded file:", df.columns.tolist())
+
     # Train simple model (demo purpose)
 model = RandomForestRegressor(random_state=42)
 model.fit(X, np.random.uniform(50, 500, len(X)))
