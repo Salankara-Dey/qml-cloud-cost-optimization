@@ -6,6 +6,7 @@ dependencies:
   - python=3.11
   - numpy
   - scipy
+  - pandas
   - scikit-learn
   - matplotlib
   - jupyterlab
@@ -13,3 +14,4 @@ dependencies:
   - pip:
       - pennylane
       - pennylane-lightning   # optional fast plugin if you want
+      - streamlit
