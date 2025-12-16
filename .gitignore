@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Conda / env
+env/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db

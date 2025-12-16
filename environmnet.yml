@@ -1,0 +1,15 @@
+name: qml-cloud
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - jupyterlab
+  - pip
+  - pip:
+      - pennylane
+      - pennylane-lightning   # optional fast plugin if you want
